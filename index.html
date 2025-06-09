@@ -3,48 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <form>
-                <div class="shape">
-                    <input type="text" name="display">
-                </div>
-                <div>
-                    <input type="button" value="AC" onclick="display.value ='' " class="operator">
-                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice (0,-1)" class="operator">
-                    <input type="button" value="."  onclick="display.value +='.' "class="operator">
-                    <input type="button" value="/"  onclick="display.value +='/' "class="operator">
-                </div>
-                <div>
-                    <input type="button" value="7" onclick="display.value +='7' ">
-                    <input type="button" value="8" onclick="display.value +='8' ">
-                    <input type="button" value="9" onclick="display.value+='9' ">
-                    <input type="button" value="*" onclick="display.value+='*' " class="operator">
-                </div>
-                <div>
-                    <input type="button" value="4" onclick="display.value+='4' ">
-                    <input type="button" value="5" onclick="display.value+='5' ">
-                    <input type="button" value="6" onclick="display.value+='6' ">
-                    <input type="button" value="-" onclick="display.value+='-' " class="operator">
-                </div>
-                <div>
-                    <input type="button" value="1" onclick="display.value+='1' ">
-                    <input type="button" value="2" onclick="display.value+='2' ">
-                    <input type="button" value="3" onclick="display.value+='3' ">
-                    <input type="button" value="+" onclick="display.value +='+' " class="operator">
-                </div>
-                <div>
-                    <input type="button" value="00" onclick="display.value +='00' ">
-                    <input type="button" value="0"  onclick="display.value +='0' ">
-                    <input type="button" value="="  onclick="display.value =eval(display.value)" class="operator">
-                    <input type="button" value="%"  onclick="display.value +='%' " class="operator">
-                </div>
-            </form>
-        </div>
+   <header class="header">
+    <a href="#" class="logo"><span>Vaishnavi</span>Patil</a>
+
+    <nav class="navbar">
+        <a href="#" class="active"></a>
+         <a href="#">Portfolio</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Education</a>
+    </nav>
+    <a href="#" class="contact">Contact Me</a>
+
+   </header>
+   <section class="home">
+    <div class="home-content">
+        <h3>Hi!!</h3>
+        <h1>I'm <spna>Vaishnavi Patil</spna><br>
+        a Frontend developer                                
+    </h1>
+    <h3>I create a websites for business purpose</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum labore omnis perspiciatis mollitia repellendus voluptate, corporis cum, ratione odit quam totam, expedita nisi fugit ipsa quasi natus maxime doloribus.</p>
+    <div class="btn-box">
+        <button class="btn-1">Hire Me</button>
+        <button class="btn-2">Download my CV</button>
     </div>
-</body>
-</html>
+    </div>
+    <div class="img-box">
+        <img src="logo.jpg" alt="">
+    </div>
+   </section>
+   <section class="about">
+    <div class="about-img">
+        <img src="logo.jpg"alt="">
+    </div>
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend<span>Developer</span></h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum voluptatibus quaerat vero quisquam, officiis ullam cumque harum possimus ipsam enim quis. Porro obcaecati accusantium nemo molestiae fugit sit eligendi distinctio?</p>
+        <a href="#" class="btn-2">Experience</a>
+    </div>
+   </section>
+
+   <section class="contact-form">
+    <h2 class="contact-me">Contact<span>Me</span></h2>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            </div>
+        
+            <div class="input-box">
+                <input type="number" placeholder="phone Number">
+                <input type="email" placeholder="Email">
+             <input type="text" placeholder="Subject">
+             </div>
+             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+             <input type="submit" value="Send Message" class="btn-1">
+
+    </form>
+   </section>
+   <footer class="footer">
+    <div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">About Me</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+        </ul>
+    </div>
+   </footer>
+   </body>
+   </html>
